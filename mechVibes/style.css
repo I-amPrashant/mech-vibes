@@ -12,10 +12,14 @@ body, html{
     overflow-x: hidden;
     position: relative;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 #container{
     height: 100%;
     width: 100%;
     background-color:#323437;
+    overflow-y: scroll;
 }
 header{
     max-width: 1200px;
@@ -24,6 +28,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 h1{
     font-size: 40px;
@@ -90,6 +96,7 @@ select{
     color: rgb(94, 93, 93);
     font-size: 23px;
     letter-spacing: 1px;
+    padding: 0 30px
 }
 #text-enter button{
     margin-left: 30px ;

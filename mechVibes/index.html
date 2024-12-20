@@ -13,7 +13,7 @@
             <h1><span style="color: #cab32f">M</span>ech<span style="color:rgb(26, 190, 190)">V</span>ibes</h1>
 
             <div id="right-side">
-                <select name="sound category">
+                <select name="sound-category" id="sound-category">
                     <option value="off">Off</option>
                     <option value="./sound 5.mp3">Creamy sound</option>
                     <option value="./Bruh-Sound-Effect-HD.mp3">Bruh sound effect</option>
@@ -25,23 +25,22 @@
          <div id="text-container">
             <h2><i class="fa-solid fa-earth"></i> &nbsp;&nbsp; english</h2>
 
-            <p>
+            <p id="text-display">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores provident in eius saepe soluta iure voluptatem maiores reprehenderit sit perferendis, ex consequatur alias, fugit animi harum, enim nesciunt quod! Qui.
             </p>
          </div>
 
          <!-- speed display  -->
           <div id="text-enter">
-            <div>
-                <input type="text">
-                <button>Start</button>
-                <button>Check speed</button>
+            <div style="display: flex;gap:20px;flex-wrap: wrap;">
+                <input type="text" id="inputField">
+                <button id="start">Start</button>
+                <button id="checkSpeed">Check speed</button>
             </div>
 
-            <p><span id="speed">45 wpm</span>&nbsp; / &nbsp;<span>70%</span></p>
+            <p><span id="speed">45 wpm</span>&nbsp; / &nbsp;<span class="accuracy">70%</span></p>
           </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
