@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    background-color:#323437;
+}
+header{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-size: 40px;
+    color:rgb(184, 184, 184);
+}
+#right-side{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+select{
+    background-color: #323437;
+    color:rgb(184, 184, 184);
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(184, 184, 184);
+    outline: none;
+    cursor: pointer;
+}
+#right-side button{
+    background-color: #323437;
+    color:rgb(184, 184, 184);
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 184);
+    outline: none;
+    cursor: pointer;
+}
+#text-container{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#text-container h2{
+    color: gray;
+    transition-duration:all .4s ease-in-out;
+    cursor: pointer;
+}
+#text-container h2:hover{
+    color: rgb(197, 196, 196);
+}
