@@ -7,8 +7,9 @@
     transition:all  .3s ease-in;
     font-family: 'Poppins', sans-serif;
 }
-*:disabled{
-    opacity: .5;
+button[disabled]{
+    cursor: not-allowed!important;
+    opacity: .5!important;
 }
 body, html{
     width: 100vw;
