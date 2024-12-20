@@ -76,7 +76,6 @@ const startTyping = () => {
     }
   }, 50);
 };
-
 const refreshTyping = () => {
   if (isStart) {
     isStart = false;
