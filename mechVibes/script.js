@@ -11,14 +11,14 @@ const accuracyElement = document.querySelector(".accuracy");
 let playAudio = null, firstKeyPress = false;
 soundCategory.addEventListener("change", (e) => {
   inputField.removeEventListener("keydown", playAudio);
-  if(!firstKeyPress){
-    firstKeyPress = true
-    startTyping();
-  }
   if (e.target.value === "off") {
     return;
   }
   playAudio = () => {
+    if(!firstKeyPress){
+        firstKeyPress = true
+        startTyping();
+      }
     const audio = new Audio(e.target.value);
     audio.play();
   };
@@ -60,7 +60,6 @@ checkSpeed.setAttribute("disabled", "true");
 document.getElementById("speed-accuracy").style.display = "none";
 
 const startTyping = () => {
-    console.log('hit')
   isStart = true;
   inputField.value = "";
   inputField.focus();
@@ -116,7 +115,7 @@ window.addEventListener("keydown", (e) => {
     refreshTyping();
   }
   if (e.key === "Enter") {
-    startTyping();
+    inputField.focus();
   }
 });
 
