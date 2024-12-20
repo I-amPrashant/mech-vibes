@@ -99,7 +99,7 @@ select{
     padding: 0 30px
 }
 #text-enter button{
-    margin-left: 30px ;
+    margin-left: 20px ;
     background-color: transparent;
     outline: none;
     border: 1px solid rgb(121, 121, 121, .6);
