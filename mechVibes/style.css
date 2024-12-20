@@ -18,7 +18,7 @@ body, html{
     background-color:#323437;
 }
 header{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 50px 30px;
     display: flex;
@@ -53,17 +53,62 @@ select{
     cursor: pointer;
 }
 #text-container{
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    max-width: 1200px;
+    position: relative;
+    margin: 150px auto 00;
+    padding: 0 30px
 }
 #text-container h2{
     color: gray;
-    transition-duration:all .4s ease-in-out;
+    transition:all .2s ease-in-out;
     cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 #text-container h2:hover{
-    color: rgb(197, 196, 196);
+    color: rgb(182, 180, 180);
+}
+#text-container p{
+    color:#5e6062;
+    font-size: 28px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+#text-enter{
+    margin: 50px auto 0;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    color: rgb(94, 93, 93);
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+#text-enter button{
+    margin-left: 30px ;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(121, 121, 121, .6);
+    padding: 7px 15px; 
+    border-radius: 15px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    cursor: pointer;
+}
+#text-enter input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid rgb(121, 121, 121, .6);
+    border-radius: 20px ;
+    padding: 6px 40px ;
+    font-size: 20px;
+    color:rgb(172, 171, 171);
 }
