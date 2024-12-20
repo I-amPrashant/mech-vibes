@@ -4,7 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition:all  .3s ease-in;
     font-family: 'Poppins', sans-serif;
+}
+*:disabled{
+    opacity: .5;
 }
 body, html{
     width: 100vw;
@@ -18,8 +22,10 @@ body, html{
 #container{
     height: 100%;
     width: 100%;
-    background-color:#323437;
     overflow-y: scroll;
+}
+#container.dark{
+    background-color:#323437;
 }
 header{
     max-width: 1200px;
@@ -41,22 +47,22 @@ h1{
     gap: 30px;
 }
 select{
-    background-color: #323437;
     color:rgb(184, 184, 184);
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid rgb(184, 184, 184);
     outline: none;
     cursor: pointer;
+    background-color: transparent;
 }
 #right-side button{
-    background-color: #323437;
     color:rgb(184, 184, 184);
     padding: 6px 15px;
     border-radius: 10px;
     border: 1px solid rgb(184, 184, 184);
     outline: none;
     cursor: pointer;
+    background-color: transparent;
 }
 #text-container{
     display: flex;
